@@ -23,64 +23,83 @@
 
    <main>
 
-      <article id="history">
-         <h2>Our History</h2>
+      <article id="history" aria-labelledby="history-heading">
+         <h2 id="history-heading">History</h2>
          <p>
-            TechCon began over a decade ago as a small meetup for developers passionate about innovation.
-            Over the years, it has evolved into a global conference, attracting industry leaders and startups alike.
-            The event has consistently showcased groundbreaking technologies and set the stage for future tech
-            revolutions.
+            TechCon started as a regional meetup in 2013 and has grown into an international conference that highlights
+            emerging technology, hands-on workshops, and cross-industry collaboration. Each year the event expands its
+            reach and diversity of topics.
          </p>
-         <img src="images/techcon-early-days.jpg"
-            alt="Early TechCon conference photo showing attendees at the first event" width="600">
+         <figure>
+            <img src="images/techcon-early-days.jpg"
+               alt="Black-and-white photo of the first TechCon meetup with attendees listening to a talk" width="600">
+            <figcaption>TechCon — early days (first meetup).</figcaption>
+         </figure>
       </article>
 
-      <article id="mission">
-         <h2>Our Mission</h2>
+      <article id="mission" aria-labelledby="mission-heading">
+         <h2 id="mission-heading">Mission</h2>
          <p>
-            The mission of TechCon is to connect brilliant minds in technology, inspire innovation, and create
-            opportunities for collaboration that shape the future. We strive to promote inclusivity, sustainability,
-            and advancement in every aspect of technology and community development.
+            Our mission is to connect builders, leaders, and learners to accelerate innovation responsibly. TechCon
+            focuses
+            on inclusivity, practical solutions, and sustainable growth across tech communities.
          </p>
-         <img src="images/innovation.jpg" alt="Illustration representing innovation and technology growth" width="600">
+         <figure>
+            <img src="images/mission-illustration.jpg"
+               alt="Illustration showing diverse people collaborating around a lightbulb representing ideas"
+               width="600">
+            <figcaption>Inclusion and collaboration drive our mission.</figcaption>
+         </figure>
       </article>
 
-      <article id="past-speakers">
-         <h2>Notable Past Speakers</h2>
+      <article id="past-speakers" aria-labelledby="speakers-heading">
+         <h2 id="speakers-heading">Notable Past Speakers</h2>
 
-         <section class="speaker">
-            <h3>Dr. Ada Lovelace</h3>
-            <img src="images/ada-lovelace.jpg" alt="Portrait of Dr. Ada Lovelace" width="200">
+         <section class="speaker" aria-labelledby="speaker-1">
+            <h3 id="speaker-1">Dr. Ada Bloom</h3>
+            <img src="images/speaker-ada.jpg" alt="Dr. Ada Bloom smiling at a podium" width="200">
             <p>
-               A visionary mathematician and the first computer programmer, Dr. Lovelace’s pioneering insights
-               continue to inspire generations of technologists at TechCon.
+               Dr. Bloom is a leader in machine learning research whose work on explainable AI has informed ethical
+               guidelines
+               used across industry.
             </p>
          </section>
 
-         <section class="speaker">
-            <h3>Alan Turing</h3>
-            <img src="images/alan-turing.jpg" alt="Portrait of Alan Turing" width="200">
+         <section class="speaker" aria-labelledby="speaker-2">
+            <h3 id="speaker-2">Alex Rivera</h3>
+            <img src="images/speaker-alex.jpg" alt="Alex Rivera in front of a conference banner" width="200">
             <p>
-               A foundational figure in computer science, Turing’s contributions to artificial intelligence and
-               computational theory remain central to the TechCon spirit.
+               Alex is a founder and CTO who scaled multiple startups; their talks on resilient systems and culture have
+               been
+               widely cited by engineering teams.
             </p>
          </section>
 
-         <section class="speaker">
-            <h3>Grace Hopper</h3>
-            <img src="images/grace-hopper.jpg" alt="Portrait of Grace Hopper" width="200">
+         <section class="speaker" aria-labelledby="speaker-3">
+            <h3 id="speaker-3">Prof. Grace Lin</h3>
+            <img src="images/speaker-grace.jpg" alt="Professor Grace Lin delivering a keynote" width="200">
             <p>
-               A programming pioneer and Navy Rear Admiral, Grace Hopper’s advocacy for practical computing and
-               innovation has been celebrated in multiple TechCon sessions.
+               Prof. Lin’s research on human-computer interaction shaped several accessibility best practices adopted at
+               TechCon.
             </p>
          </section>
+
+         <h3>Highlights Reel</h3>
+         <p>Watch a short highlights clip from past conferences (subtitles provided).</p>
+         <video controls width="640" aria-describedby="video-desc">
+            <source src="media/techcon-highlights.mp4" type="video/mp4">
+            <track src="media/techcon-highlights-en.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video element. <a href="media/techcon-highlights.mp4">Download the
+               video</a>.
+         </video>
+         <p id="video-desc">Highlights from previous TechCon events featuring keynotes, panels, and workshops.</p>
 
       </article>
 
    </main>
 
    <footer>
-      <p>Copyright &copy; 2025 TechCon 2024. All rights reserved.</p>
+      <p>copyright &copy; 2025 TechCon 2024. All rights reserved.</p>
    </footer>
 
 </body>
